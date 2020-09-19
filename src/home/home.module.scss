@@ -1,0 +1,53 @@
+@import '../style/variables.scss';
+
+.home{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.header{
+    color: $color-dark-blue;
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+.flourishIcon{
+    transform: rotate(90deg);
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    animation:rotation 10s linear infinite;
+}
+.flourishIcon:hover{
+    animation:reverseRotation 10s linear infinite;
+}
+.flourishleft{
+    transform: rotate(270deg)  scaleX(-1);
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    animation:reverseRotation 10s linear infinite;
+}
+.flourishleft:hover{
+    animation:rotation 10s linear infinite;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes reverseRotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  .navBar{
+    background-color: $color-dark-grey;
+    width: 100% !important;
+    height: 40px !important;
+  }

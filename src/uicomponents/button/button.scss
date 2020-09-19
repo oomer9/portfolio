@@ -1,4 +1,7 @@
 @import '../../style/variables.scss';
 .primary{
-    background-color: $coler-blue !important;
+    background-color: $color-light-blue !important;
+}
+button:focus {
+    outline: none !important;
 }
