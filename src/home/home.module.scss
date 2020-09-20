@@ -6,27 +6,28 @@
 }
 .header{
     color: $color-dark-blue;
-    font-size: 48px;
-    margin-bottom: 24px;
+    font-size: 36px;
 }
-.flourishIcon{
+.headerIcon{
     transform: rotate(90deg);
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     margin: 15px;
+    margin-bottom: 20px;
     animation:rotation 10s linear infinite;
 }
-.flourishIcon:hover{
+.headerIcon:hover{
     animation:reverseRotation 10s linear infinite;
 }
-.flourishleft{
+.headerIconLeft{
     transform: rotate(270deg)  scaleX(-1);
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     margin: 15px;
+    margin-bottom: 20px;
     animation:reverseRotation 10s linear infinite;
 }
-.flourishleft:hover{
+.headerIconLeft:hover{
     animation:rotation 10s linear infinite;
 }
 
@@ -46,12 +47,21 @@
       transform: rotate(-360deg);
     }
   }
-  .navBar{
+  .content{
+    background-color: $color-white;
+    margin: auto;
+    width: 80%;
+    height: 900px !important;
+  }
+  .top{
+    position: fixed;
+    width: 95% !important;
+  }
+  .headerLine {
+    height: 5px;
+    border-radius: 5px;
     background-color: rgb(32, 32, 32);
     background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
     background-size: 10px 10px, 10px 10px, 10px 5px;
     background-position: 0px 0px, 5px 5px, 0px 0px;
-    margin: auto;
-    width: 80%;
-    height: 50px !important;
   }

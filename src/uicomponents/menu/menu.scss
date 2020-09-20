@@ -1,0 +1,13 @@
+@import '../../style/variables.scss';
+
+.MuiMenu-paper{
+    margin-top: 20px;
+}
+.MuiMenuItem-root{
+    font-size: 24px;
+    white-space: wrap !important;
+}
+a{
+    color:$color-dark-grey;
+    font-size: 24px;
+}
