@@ -21,7 +21,7 @@ menuOptions=[{label:"",route:""}],
 
     return(
         <div className={className}>
-            <div className={classes.icon} onClick={(e)=>{handleClick(e)}}><img  src={MenuIcon} /></div>  
+            <div onClick={(e)=>{handleClick(e)}}><img className={classes.icon} src={MenuIcon} /></div>  
             <Menu
             id="simple-menu"
             anchorEl={anchor}

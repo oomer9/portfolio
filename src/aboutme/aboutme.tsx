@@ -8,21 +8,14 @@ import Avatar from '@material-ui/core/Avatar';
 
 const AboutMe =()=>{
 
-
     return(
         <div className=" justify-content-center ">
             <div className=" d-flex flex-row justify-content-center ">  
                 <Avatar alt="Omer Pic" src={OmerPic} className={classes.avatar} />
             </div>
-            <div className={classes.rowAboutMe +" d-flex flex-row justify-content-center "}>
+            <div className={" d-flex flex-row justify-content-center "}>
                 <div className={classes.item}>
-                    omersquared94@gmail.com
-                </div>
-                <div >
-                -
-                </div>
-                <div className={classes.item}>
-                Software Engineer 
+                    Software Engineer 
                 </div>
             </div>
         </div>

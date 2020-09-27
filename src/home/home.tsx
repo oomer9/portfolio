@@ -2,10 +2,7 @@ import React from 'react';
 import classes from  './home.module.scss';
 import '../style/globalstyles.scss';
 import './home.scss'
-import Button from '../uicomponents/button/button';
-import blackHole from '../svgs/blackHole.svg';
-import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
-import HomeMenu from '../uicomponents/menu/menu';
+import { Route } from "react-router-dom";
 import AboutMe from '../aboutme/aboutme';
 import Header from '../header/header';
   
@@ -14,7 +11,6 @@ class Home extends React.Component{
     constructor(props: any) {
         super(props);
         this.state ={
-            
         }
       }
     
@@ -25,7 +21,7 @@ class Home extends React.Component{
                 <Header/>
             </div>
             <div className={classes.content}> 
-                <Route  path="/about" component={AboutMe}/>
+                <Route  path="/about" exact component={AboutMe}/>
             </div>
         </div>
     )};

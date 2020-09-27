@@ -3,14 +3,14 @@
 
   .header{
     color: $color-dark-blue;
-    font-size: 24px;
+    font-size: 48px;
 }
 .headerIcon{
     transform: rotate(90deg);
-    height: 20px;
-    width: 20px;
+    height: 36px;
+    width: 36px;
     margin: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     animation:rotation 10s linear infinite;
 }
 .headerIcon:hover{
@@ -18,10 +18,10 @@
 }
 .headerIconLeft{
     transform: rotate(270deg)  scaleX(-1);
-    height: 20px;
-    width: 20px;
+    height: 36px;
+    width: 36px;
     margin: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     animation:reverseRotation 10s linear infinite;
 }
 .headerIconLeft:hover{
@@ -48,7 +48,6 @@
     background-color: $color-dark-blue;
     height: 5px;
     width: 80%;
-    display: flex;
     left: 10%;
     border-radius: 5px;
     justify-content: center;
