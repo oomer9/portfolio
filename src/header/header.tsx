@@ -1,11 +1,11 @@
 import React from 'react';
 import blackHole from '../svgs/blackHole.svg';
-import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import HomeMenu from '../uicomponents/menu/menu';
 import classes from './header.module.scss'
 
 const Header = ()=>{
-    const menuOptions=[{label:"About",route:"/about"},{label:"Graphs with React",route:"/graphs"}];
+    const menuOptions=[{label:"About",route:"/about"},{label:"Data rendering",route:"/data"}];
     return(
         <div>
             <div className=" d-flex flex-row  align-items-center justify-content-between ">

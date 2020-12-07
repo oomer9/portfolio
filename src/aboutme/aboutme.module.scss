@@ -1,8 +1,8 @@
 @import '../style/variables.scss';
 
 .avatar{
-    width: 70px !important;
-    height: 70px !important;
+    width: 100px !important;
+    height: 100px !important;
     margin-bottom: 12px;
     :hover{
         animation-name: pulse;
@@ -10,9 +10,7 @@
         animation-iteration-count: infinite;
     }
 }
-.content{
-    height: 900px;
-}
+
 @keyframes pulse {
     0% {transform: scale(1);}
     50% {transform: scale(1.1);}
@@ -29,4 +27,6 @@
 .item:hover{
     color: $color-blue !important;
 }
+
+
  

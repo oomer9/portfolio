@@ -29,9 +29,11 @@ menuOptions=[{label:"",route:""}],
             open={Boolean(anchor)}
             onClose={handleClose}
              >
-                {menuOptions && menuOptions.map((item)=>{
+                {menuOptions && menuOptions.map((item,key)=>{
                   return(
-                    <Link to={item.route}><MenuItem onClick={handleClose}>{item.label}</MenuItem></Link>
+                    <Link key={key} to={item.route}>
+                      <MenuItem onClick={handleClose}>{item.label}</MenuItem>
+                    </Link>
                   )  
                 })}
             </Menu>
