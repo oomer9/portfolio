@@ -5,8 +5,7 @@ import {AgGridReact} from 'ag-grid-react';
 import classes from './dataRendering.module.scss'
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-blue.css';
-import { RowClickedEvent } from 'ag-grid-community';
-
+import Dialog from '../uicomponents/dialog/dialog';
 
 const DataRendering =()=>{
     const [colDefs,setColDefs] = useState([{}]);
@@ -25,7 +24,7 @@ const DataRendering =()=>{
         ];
         setColDefs(columnDefs);
     }
-    const rowClicked = (e: RowClickedEvent)=>{
+    const rowClicked = (e: any)=>{
         console.log(e)
     }
     return(
@@ -35,9 +34,12 @@ const DataRendering =()=>{
             </div>
             <div className={classes.grid + "  justify-content-center ag-theme-blue mb-4 "}> 
                 <AgGridReact rowData={rowData}
-                columnDefs={colDefs} onRowClicked={(e)=>{rowClicked(e)}} >
+                columnDefs={colDefs} onRowClicked={rowClicked} enableBrowserTooltips={true} >
                 </AgGridReact>
             </div>
+            <Dialog isOpen={false}>
+                
+            </Dialog>
         </div>
     )
     
