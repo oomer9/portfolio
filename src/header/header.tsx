@@ -5,9 +5,9 @@ import HomeMenu from '../uicomponents/menu/menu';
 import classes from './header.module.scss'
 
 const Header = ()=>{
-    const menuOptions=[{label:"About",route:"/about"},{label:"Data rendering",route:"/data"}];
+    const menuOptions=[{label:"Data rendering",route:"/data"}];
     return(
-        <div>
+        <div className={classes.headerAnimations}>
             <div className=" d-flex flex-row  align-items-center justify-content-between ">
                 <div/>
                 <div>

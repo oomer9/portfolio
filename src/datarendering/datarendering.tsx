@@ -25,23 +25,26 @@ const DataRendering =()=>{
  
       const setColumnDefs = ()=>{
         const columnDefs =    [
-            { headerName: 'Title', field: 'title',width:300 },
-            { headerName: 'Year Released', field: 'year' },
-            { headerName: 'Genre', field: 'genre'}
+            { headerName: 'Title', field: 'title',resizable: true },
+            { headerName: 'Year Released', field: 'year',resizable: true },
+            { headerName: 'Genre', field: 'genre',resizable: true}
         ];
         setColDefs(columnDefs);
     }
    
     return(
-        <div>
+        <div >
             <div className=" d-flex flex-row justify-content-center ">
                 Movies 
             </div>
-            <div className={classes.grid + " ag-theme-alpine mb-4 "}> 
-                <AgGridReact rowData={rowData}
-                columnDefs={colDefs} onGridReady={onGridReady} onRowClicked={rowClicked} enableBrowserTooltips={true} >
-                </AgGridReact>
+            <div className=" d-flex justify-content-center  ">
+                <div className={classes.grid + "  ag-theme-alpine mb-4 "}> 
+                    <AgGridReact rowData={rowData}
+                    columnDefs={colDefs} onGridReady={onGridReady} onRowClicked={rowClicked} enableBrowserTooltips={true} >
+                    </AgGridReact>
+                </div>
             </div>
+            
             <Dialog isOpen={false}>
                 
             </Dialog>

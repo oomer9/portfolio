@@ -15,7 +15,7 @@ const Home = ()=> {
                 <Header/>
             </div>
             <div className={classes.content}> 
-                <Route  path="/about" exact component={AboutMe}/>
+                <Route  path="/portfolio" exact component={AboutMe}/>
                 <Route  path="/data" exact component={DataRendering}/>
             </div>
                 

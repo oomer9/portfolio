@@ -24,9 +24,25 @@
     margin-right:5px;
     margin-left: 5px;
 }
-.item:hover{
-    color: $color-blue !important;
+.icon{
+    cursor: pointer;
+    margin-right: 5px;
+
 }
+.appear{
+    animation:appear 5s;
+}
+@keyframes appear {
+    from { 
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+  }
 
 
  
