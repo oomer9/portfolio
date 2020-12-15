@@ -8,6 +8,7 @@ import 'ag-grid-community/dist/styles/ag-theme-blue.css';
 import Dialog from '../uicomponents/dialog/dialog';
 import Button from '../uicomponents/button/button';
 import './dataRendering.scss';
+import '../style/globalstyles.scss';
 
 const DataRendering =()=>{
     const [colDefs,setColDefs] = useState([{}]);
@@ -47,6 +48,9 @@ const DataRendering =()=>{
     }
     return(
         <div >
+            <div className=" sectionHeader d-flex flex-row justify-content-start mb-2">
+                Data Rendering
+            </div>
             <div className=" d-flex flex-row justify-content-center ">
                 Movies 
             </div>
@@ -65,7 +69,6 @@ const DataRendering =()=>{
                 <div className=" d-flex flex-row justify-content-center ">
                     <Button label="OK" onClick={closeDialog}/>
                 </div>
-                
             </Dialog>
         </div>
     )

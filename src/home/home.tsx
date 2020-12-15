@@ -14,9 +14,15 @@ const Home = ()=> {
             <div className={classes.fixed}>
                 <Header/>
             </div>
+           
             <div className={classes.content}> 
-                <Route  path="/portfolio" exact component={AboutMe}/>
-                <Route  path="/data" exact component={DataRendering}/>
+                <div className={classes.welcome}>
+                    <div  className={" d-flex flex-row justify-content-center "+ classes.welcomeText}>
+                        Welcome To My Portfolio 
+                    </div>
+                </div>
+                <AboutMe/>
+                <DataRendering/>
             </div>
                 
         </div>

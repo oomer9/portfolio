@@ -4,6 +4,7 @@ import OmerPic from '../svgs/omerPic.jpeg'
 import Avatar from '@material-ui/core/Avatar';
 import LinkedIn from '../svgs/linkedInLogo.svg';
 import GithubLogog from '../svgs/githubIcon.svg';
+import '../style/globalstyles.scss'
 
 const AboutMe =()=>{
 
@@ -14,7 +15,10 @@ const AboutMe =()=>{
         window.open("https://github.com/oomer9", '_blank');
     }
     return(
-        <div className={classes.appear + " justify-content-center "}>
+        <div className={" justify-content-center "}>
+            <div className=" sectionHeader d-flex flex-row justify-content-start mb-2 ">
+                About Me
+            </div>
             <div className=" d-flex flex-row justify-content-center ">  
                 <Avatar alt="Omer Pic" src={OmerPic} className={classes.avatar} />
             </div>
