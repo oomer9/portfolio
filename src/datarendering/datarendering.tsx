@@ -48,7 +48,7 @@ const DataRendering =()=>{
     }
     return(
         <div >
-            <div className=" sectionHeader d-flex flex-row justify-content-start mb-2">
+            <div className=" mdHeader d-flex flex-row justify-content-start mb-2">
                 Data Rendering
             </div>
             <div className=" d-flex flex-row justify-content-center ">
