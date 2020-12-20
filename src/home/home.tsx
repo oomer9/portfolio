@@ -22,7 +22,7 @@ const Home = ()=> {
                     </div>
                 </div>
                 <AboutMe/>
-                <DataRendering/>
+                {/* <DataRendering/> */}
             </div>
                 
         </div>

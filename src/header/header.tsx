@@ -10,7 +10,7 @@ const Header = ()=>{
             <div className=" d-flex flex-row  align-items-center justify-content-center ">
                 <div>
                     <img className={classes.headerIconLeft} src={blackHole}/>
-                    <Link to="/portfolio"><span className={classes.header}>Omer Omer</span></Link>
+                        <Link to="/portfolio"><span className={classes.header}>Omer Omer</span></Link>
                     <img className={classes.headerIcon}  src={blackHole}/>
                 </div>
             </div>
