@@ -1,4 +1,16 @@
+@import '../style/variables.scss';
+
 a{
     text-decoration: none !important;
 }
-
+li{
+    list-style: none; /* Remove default bullets */
+  }
+li::before {
+    content: "\21DD";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: $color-blue;
+    font-weight: bold; 
+    display: inline-block;
+    width: 20px;
+    margin-left: 5px; 
+  }

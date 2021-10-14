@@ -1,33 +1,27 @@
-import React, { useState } from 'react';
-import classes from  './home.module.scss';
-import '../style/globalstyles.scss';
-import './home.scss'
-import { Route } from "react-router-dom";
-import AboutMe from '../aboutme/aboutme';
-import Header from '../header/header';
-import DataRendering from '../datarendering/datarendering';
+import React, { useState } from "react";
+import classes from "./home.module.scss";
+import "../style/globalstyles.scss";
+import "./home.scss";
+import AboutMe from "../aboutme/aboutme";
 
-const Home = ()=> {
-
-    return(
-        <div className=" d-flex ">
-            <div className={classes.fixed}>
-                <Header/>
-            </div>
-           
-            <div className={classes.content}> 
-                <div className={classes.welcome}>
-                    <div  className={" d-flex flex-row justify-content-center "+ classes.welcomeText}>
-                        Welcome To My Portfolio 
-                    </div>
-                </div>
-                <AboutMe/>
-                {/* <DataRendering/> */}
-            </div>
-                
+const Home = () => {
+  return (
+    <div>
+        <div className=
+            " d-flex flex-column justify-content-center " ></div>
+      <div className={classes.welcome}>
+        <div
+          className={
+            " d-flex flex-row justify-content-center " + classes.welcomeText
+          }
+        >
+          Omer Omer
         </div>
-    )
-}
+      </div>
+      <div>
+      <AboutMe /></div>
+    </div>
+  );
+};
 
 export default Home;
-

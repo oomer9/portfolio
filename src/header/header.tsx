@@ -1,7 +1,6 @@
 import React from 'react';
 import blackHole from '../svgs/blackHole.svg';
 import {Link} from "react-router-dom";
-import HomeMenu from '../uicomponents/menu/menu';
 import classes from './header.module.scss'
 
 const Header = ()=>{

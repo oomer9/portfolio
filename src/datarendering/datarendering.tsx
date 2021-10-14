@@ -62,12 +62,14 @@ const DataRendering =()=>{
                 </div>
             </div>
             
-            <Dialog isOpen={openDialog} onClose={closeDialog} header="Movie Clicked">
+            <Dialog isOpen={openDialog} onClose={closeDialog} header="Create Order">
+                <div>
                 <div className=" d-flex flex-row justify-content-center mb-2 ">
                     <img src={movieImage} alt="Error Finding Movie image"/>
                 </div>
                 <div className=" d-flex flex-row justify-content-center ">
                     <Button label="OK" onClick={closeDialog}/>
+                </div>
                 </div>
             </Dialog>
         </div>

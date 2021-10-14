@@ -4,6 +4,10 @@
 .header{
     color: $color-dark-blue;
     font-size: 48px;
+   
+}
+.header:hover{
+  text-decoration: none !important;
 }
 .headerIcon{
     transform: rotate(90deg);

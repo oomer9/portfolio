@@ -1,12 +1,5 @@
 @import '../style/variables.scss';
 
-
-  .content{
-    width: 100%;
-    margin-top: 100px;
-    margin-right:20%;
-    margin-left: 20%;
-  }
   .fixed{
     position: fixed;
     z-index: 1000;
@@ -23,9 +16,10 @@
     background-position: 0px 0px, 5px 5px, 0px 0px;
     color: $color-light-grey;
     height: auto;
+    width: 100%;
   } 
   .welcomeText{
-    font-size: 62px;
+    font-size: 52px;
     padding: 50px;  
   }
 
